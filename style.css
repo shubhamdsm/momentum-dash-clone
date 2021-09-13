@@ -2,3 +2,20 @@ body {
     background: no-repeat center center fixed; 
     background-size: cover;
 }
+.container{
+    display: flex;
+}
+.child-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.name{
+    display: flex;
+    align-items: center;
+
+}
+.name h1 {
+    padding: 10px;
+    
+}
