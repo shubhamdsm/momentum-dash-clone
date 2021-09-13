@@ -58,3 +58,9 @@ let date = new Date()
 document.getElementById('time').innerHTML = date.toLocaleTimeString('en-IN',{timeStyle:'short'})}
 
 setInterval(getTime,1000)
+
+// document.getElementById('todo').onkeydown = function mainFocusToday(e){
+//     e.preventDefault();
+//     let input = document.getElementById('input').value;
+//     document.getElementById('input-text').innerHTML = input
+// }
