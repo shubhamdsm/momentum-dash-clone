@@ -18,6 +18,10 @@ fetch(`https://api.coingecko.com/api/v3/coins/bitcoin`)
     <h1>${data.name}</h1>
     
     `
-    document.ge
+    document.getElementById('bitcoin-price').innerHTML = `
+    <p>  Current Price: &#8377; ${data.market_data.current_price.inr} </p>
+    <p> High: &#8377; ${data.market_data.high_24h.inr} </p>
+    <p> Low: &#8377; ${data.market_data.low_24h.inr} </p>
+    `
 })
 

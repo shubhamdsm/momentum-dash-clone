@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: no-repeat center center fixed; 
     background-size: cover;
@@ -5,17 +10,21 @@ body {
 .container{
     display: flex;
 }
-.child-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 .name{
+    margin-top: 10px;
     display: flex;
     align-items: center;
 
 }
 .name h1 {
     padding: 10px;
-    
+
+}
+.price{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+
 }
