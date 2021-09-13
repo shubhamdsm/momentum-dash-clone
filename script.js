@@ -53,6 +53,13 @@ navigator.geolocation.getCurrentPosition(position =>  {
     
 });
 
+fetch(`https://api.quotable.io/random?maxLength=50`)
+.then(res => res.json())
+.then(data =>
+    document.getElementById('quotes').innerHTML = `
+    <p>${data.content}</p>
+    `
+)
 function getTime(){
 let date = new Date()
 document.getElementById('time').innerHTML = date.toLocaleTimeString('en-IN',{timeStyle:'short'})}

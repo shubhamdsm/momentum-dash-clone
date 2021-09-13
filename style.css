@@ -41,6 +41,11 @@ input:focus{
 .child-2{
     margin: 0 auto;
 }
+.child-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .name{
     margin-top: 10px;
     display: flex;
