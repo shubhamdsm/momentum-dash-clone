@@ -6,3 +6,7 @@ fetch(`https://api.unsplash.com/photos/random?orientation=landscape&query=nature
 .then(data => {
     document.body.style.backgroundImage = `url(${data.urls.full})`
 })
+.catch(error => {
+    console.log('error -----> ',error)
+})
+
