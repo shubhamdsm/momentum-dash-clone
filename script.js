@@ -58,7 +58,9 @@ fetch(`https://api.quotable.io/random?maxLength=50`)
 .then(data =>
     document.getElementById('quotes').innerHTML = `
     <p>${data.content}</p>
+    <small> Qutote Author: ${data.author}</small>
     `
+    
 )
 function getTime(){
 let date = new Date()
