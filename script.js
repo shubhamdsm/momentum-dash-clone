@@ -58,7 +58,6 @@ fetch(`https://api.quotable.io/random?maxLength=50`)
 .then(data =>
     document.getElementById('quotes').innerHTML = `
     <p>${data.content}</p>
-    <small> Qutote Author: ${data.author}</small>
     `
     
 )
@@ -68,8 +67,3 @@ document.getElementById('time').innerHTML = date.toLocaleTimeString('en-IN',{tim
 
 setInterval(getTime,1000)
 
-// document.getElementById('todo').onkeydown = function mainFocusToday(e){
-//     e.preventDefault();
-//     let input = document.getElementById('input').value;
-//     document.getElementById('input-text').innerHTML = input
-// }
